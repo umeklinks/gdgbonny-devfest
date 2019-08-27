@@ -1,0 +1,16 @@
+{
+  "basepath": "/",
+  "url": "https://hoverboard-master.firebaseapp.com/",
+  "analytics": "UA-43643469-9",
+  "prefix": "/",
+  "firebase": {
+    "apiKey": "AIzaSyCzDpHo-kEIhoMFvqebiqEhfP8ZKa-LJs8",
+    "authDomain": "gdg-devfest-bonny.firebaseapp.com",
+    "databaseURL": "https://gdg-devfest-bonny.firebaseio.com",
+    "projectId": "gdg-devfest-bonny",
+    "storageBucket": "gdg-devfest-bonny.appspot.com",
+    "messagingSenderId": "811287842876",
+    "appId": "1:811287842876:web:0e41f063f340c32b"
+  },
+  "googleMapApiKey": ""
+}
