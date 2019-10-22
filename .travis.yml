@@ -12,8 +12,6 @@ install:
 script:
   - yarn lint
   - echo "Building..."
-  - 'if [ "$TRAVIS_BRANCH" == "develop" ]; then yarn build; fi'
-  - 'if [ "$TRAVIS_BRANCH" == "master" ]; then yarn build:prod; fi'
 before_deploy:
   - echo "Deploying!"
 deploy:
@@ -21,13 +19,7 @@ deploy:
     skip_cleanup: true
     'on':
       branch: master
-    project: hoverboard-master
+    project: gdg-devfest-bonny
     token:
       secure: PXShHea2zJ3S7olMby8dzfoBeWw8/mbV4Gg7aq+iPJ7ZJhT9SWYD946tJNj9j/gxOUDB6oGq3pnYWBPQ+VJO4sqmDPqlJa80NSd6wILbZNgtCejCmX/OyILXngXNQvjw2LrJ7ErNWrqVNADKiZIfKnLSWPupmLl4IFegc79UWCjIOLM1XXFsA3X+66ozBdte6fg0eL0n4HD0ga/U3p51G4SgfsLNPHCJ5+ecJcbc2ZgzfL0D3B5e2dvvJzQ4rwN23Le7UCuVh5vLntdeDZkZ7PN4rVRNAPZCyvFPFtuz20CRSd035qc3y/eTNwEsqkrwLCuF4cIWr5rWKip6uphJPmUVNuAVRsB+37Cazab4yR3fHldYJ/4cXEMCk4cogKdrPhlo41Gc+JO+isf4QU1pnLppC0I6zUa1U/F0ZXan7mjxBeoAW+RGwNXvnvWXPno6ooZwgpI2N7Hho/pGBpGdgIVF17edPczg5SUiGq3LTvaWKhWBCtbdxnJP+kWKqDDjiSnKCJ22j/ydw3NuDFOgPIqgSr6X8npxmPdf2Hi/zJsQIb1OTmYM6uPndYPPl0lZs8GQ09rcQXKs/5xIZJxaTO0XKXxYMeB7EGxavsVrvunv+ZnX1es2Y4k8QwLE1uZ78HIL9hgrxtQDGprY0wahIM8U5fNtkvLas9Mt0Nb0Q8M=
-  - provider: firebase
-    skip_cleanup: true
-    'on':
-      branch: develop
-    project: hoverboard-dev
-    token:
-      secure: PXShHea2zJ3S7olMby8dzfoBeWw8/mbV4Gg7aq+iPJ7ZJhT9SWYD946tJNj9j/gxOUDB6oGq3pnYWBPQ+VJO4sqmDPqlJa80NSd6wILbZNgtCejCmX/OyILXngXNQvjw2LrJ7ErNWrqVNADKiZIfKnLSWPupmLl4IFegc79UWCjIOLM1XXFsA3X+66ozBdte6fg0eL0n4HD0ga/U3p51G4SgfsLNPHCJ5+ecJcbc2ZgzfL0D3B5e2dvvJzQ4rwN23Le7UCuVh5vLntdeDZkZ7PN4rVRNAPZCyvFPFtuz20CRSd035qc3y/eTNwEsqkrwLCuF4cIWr5rWKip6uphJPmUVNuAVRsB+37Cazab4yR3fHldYJ/4cXEMCk4cogKdrPhlo41Gc+JO+isf4QU1pnLppC0I6zUa1U/F0ZXan7mjxBeoAW+RGwNXvnvWXPno6ooZwgpI2N7Hho/pGBpGdgIVF17edPczg5SUiGq3LTvaWKhWBCtbdxnJP+kWKqDDjiSnKCJ22j/ydw3NuDFOgPIqgSr6X8npxmPdf2Hi/zJsQIb1OTmYM6uPndYPPl0lZs8GQ09rcQXKs/5xIZJxaTO0XKXxYMeB7EGxavsVrvunv+ZnX1es2Y4k8QwLE1uZ78HIL9hgrxtQDGprY0wahIM8U5fNtkvLas9Mt0Nb0Q8M=
+  
